@@ -7,19 +7,10 @@ h1 a{
     color: #333;
 }
 
-.priority_class{
-    /*background-color: #F00;*/
-}
-
 footer {
     background-color: #eee;
     margin: 1em;
     padding: 1em;
-}
-
-
-.task_manager_table, .incomplete_tasks_table{
-    /*background-color: #f00;*/
 }
 
 .task_manager_table_row, .incomplete_tasks_table_row, .completed_tasks_table_row, .completed_tasks_table, .task_manager_table_row:nth-child(even), .incomplete_tasks_table_row:nth-child(even), .completed_tasks_table_row:nth-child(even) {
@@ -31,15 +22,4 @@ footer {
     color: #777;
     font-style: italic;
     background-color: #ddd;
-}
-
-
-
-/*.task_manager_table_row:nth-child(even), .incomplete_tasks_table_row:nth-child(even) {
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-}*/
-
-.task_manager_table_row:hover {
-    /*background-color: #f00;*/
 }
