@@ -28,9 +28,7 @@
 
 
                     <form method='POST' action='/login'>
-
                         {!! csrf_field() !!}
-
                         <div class='form-group'>
                             <label>Email</label>
                             <input type='text' name='email' value='{{ old('email') }}'>
@@ -62,8 +60,6 @@
                 </div>
             </div>
 
-
-
             <div class="small-5 columns">
                 <div class="callout">
                     <h5>
@@ -72,7 +68,6 @@
 
                     <form method='POST' action='/register'>
                         {!! csrf_field() !!}
-
                         <div class='form-group'>
                             <label>Name</label>
                             <input type='text' name='name' value='{{ old('name') }}'>
@@ -92,16 +87,10 @@
                             <label>Confirm Password</label>
                             <input type='password' name='password_confirmation'>
                         </div>
-
                         <button class="success button" type="submit">Register</button>
-
                     </form>
-
                 </div>
-
             </div>
-
-
 
         </div>
     </div>

@@ -31,8 +31,6 @@
 
         @endif
 
-
-
         <header class="row">
         	<div class="small-12 columns">
     			<h1><a href="/">Awesome Task Manager</a></h1>
@@ -40,13 +38,10 @@
         </header>
 
         <div class="row">
-
-
             @if(Auth::check())
                 <div class="top-bar">
                   <div class="top-bar-left">
                     <ul class="menu">
-
                       <li @yield('task_manager_home')><a href="/tasks">All Tasks</a></li>
                       <li @yield('incomplete_tasks')><a href="/tasks/incomplete">Incomplete Tasks</a></li>
                       <li @yield('completed_tasks')><a href="/tasks/completed">Completed Tasks</a></li>
@@ -61,14 +56,8 @@
                     </ul>
                   </div>
                 </div>
-
             @else
-
-
             @endif
-
-
-
 
             {{-- <section> --}}
                 {{-- Main page content will be yielded here --}}
@@ -77,11 +66,7 @@
 
             {{-- @yield('body-content') --}}
 
-
         </div>
-
-
-
 
         <footer class="row">
             {{-- &copy; {{ date('Y') }} --}}
@@ -90,9 +75,6 @@
               </div>
         </footer>
     </div>
-
-
-
 
     {{-- <script src="/js/vendor/jquery.js"></script> --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

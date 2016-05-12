@@ -1,17 +1,12 @@
 @extends('layouts.master')
 
-
 @section('title')
     Incomplete tasks
 @stop
 
-
-
 @section('head')
 
 @stop
-
-
 
 @section('incomplete_tasks')
     class="active"
@@ -19,13 +14,8 @@
 
 
 @section('content')
-
-
-
     <article class="small-12 small-centered columns">
-
         <h3>Incomplete tasks</h3>
-
         @if(count($tasks->where('completed', 0)) == 0)
             <p>There are no incomplete tasks to display, why not <a href="/create">create a new task?</a></p>
         @else

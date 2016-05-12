@@ -1,39 +1,27 @@
 @extends('layouts.master')
 
-
 @section('title')
     Edit task
 @stop
-
-
 
 @section('head')
 
 @stop
 
-
-
 @section('task_manager_home')
     class="active"
 @stop
 
-
 @section('content')
     <article class="small-12 columns">
         <h3>Edit task</h3>
-
         @if($task->completed !== 0)
-
             <div class="callout warning">This task is already completed. No further changes can be saved. </div>
-
         @endif
 
         @if($task->completed == 0) <form data-abide method="POST" action="/task/edit"> @endif
-
             <input type='hidden' name='id' value='{{$task->id}}'>
             {{ csrf_field() }}
-
-
             <fieldset class="callout">
                 <legend>Description <span class="secondary label">Required</span> </legend>
                 @if($task->completed == 0)
@@ -50,13 +38,11 @@
 
             <fieldset class="callout">
     			<legend>Created at:</legend>
-
                     {{ $task->created_at }}
 			</fieldset>
 
             <fieldset class="callout">
     			<legend>@if($task->completed == 0) Updated at: @else Completed at: @endif </legend>
-
                     {{ $task->updated_at }}
 			</fieldset>
 
@@ -80,16 +66,12 @@
                 @endforeach
             </fieldset>
 
-
             @if($task->completed == 0)
                 <button class="success button" type="submit">Save changes</button>
             @else
                 {{-- <div class="callout warning">This task is already completed. No further changes can be saved. </div> --}}
                 <button class="disabled button">Save changes</button>
             @endif
-
-
-
 
         @if($task->completed == 0)</form>@endif
 

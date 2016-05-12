@@ -8,6 +8,10 @@
 
 @stop
 
+@section('search_page')
+    class="active"
+@stop
+
 @section('content')
 
     <h3>Search for a task</h3>

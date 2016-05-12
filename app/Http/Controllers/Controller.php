@@ -129,64 +129,6 @@ class Controller extends BaseController
         return redirect('/tasks');
     }
 
-    // public function getPracticePage() {
-    //     return view('layouts.practice');
-    // }
-    //
-    // public function getEx5() {
-    //     // read from DB
-    //     $tasks = \App\Task::all();
-    //     foreach ($tasks as $task) {
-    //         echo $task->description.'<br>';
-    //     }
-    // }
-    //
-    //
-    // public function getEx4() {
-    //     // write to DB
-    //     $task = new \App\Task();
-    //
-    //     $task->description = 'The Great Gatsby 32523';
-    //     $task->note = 'F. Scott Fitzgerald 6732';
-    //     $task->due_date = '2017-04-01 02:15:36';
-    //     $task->priority = 1;
-    //     $task->completed = 0;
-    //     $task->belongs_to = 338;
-    //
-    //     $task->save();
-    //
-    //     return 'added book';
-    // }
-    //
-    //
-    //
-    // public function getEx2() {
-    //     // write to DB
-    //     \DB::table('tasks')->insert([
-    //         'created_at' => \Carbon\Carbon::now()->toDateTimeString(),
-    //         'updated_at' => \Carbon\Carbon::now()->toDateTimeString(),
-    //         'description' => 'The Great Gatsby 3257623',
-    //         'note' => 'F. Scott Fitzgerald 35112',
-    //         'due_date' => '2017-04-07 06:19:06',
-    //         'priority' => 2,
-    //         'completed' => 0,
-    //         'belongs_to' => 2365,
-    //     ]);
-    //
-    //     return 'added book';
-    // }
-    //
-    //
-    // public function getEx1() {
-    //     // read from DB
-    //     $tasks = \DB::table('tasks')->where('note', 'LIKE', '%Scott%')->get();
-    //     echo 'read: <br>';
-    //     foreach ($tasks as $task) {
-    //         echo $task->description.'<br>';
-    //     }
-    // }
-
-
 
 
 }
