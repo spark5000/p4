@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Incomplete tasks 
+    Incomplete tasks
 @stop
 
 
@@ -23,7 +23,6 @@
 
 
     <article class="small-12 small-centered columns">
-
 
         <h3>Incomplete tasks</h3>
 
