@@ -12,7 +12,6 @@ class TasksTableSeeder extends Seeder
     public function run()
     {
 
-        // $user_id = \App\
         DB::table('tasks')->insert([
             'created_at' => Carbon\Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon\Carbon::now()->toDateTimeString(),

@@ -69,7 +69,6 @@
             @if($task->completed == 0)
                 <button class="success button" type="submit">Save changes</button>
             @else
-                {{-- <div class="callout warning">This task is already completed. No further changes can be saved. </div> --}}
                 <button class="disabled button">Save changes</button>
             @endif
 

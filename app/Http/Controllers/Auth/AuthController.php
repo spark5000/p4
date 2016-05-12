@@ -81,7 +81,6 @@ class AuthController extends Controller
 
         \Auth::logout();
 
-        # This line is our new addition to this method
         \Session::flash('message','You have been logged out.');
 
         return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');

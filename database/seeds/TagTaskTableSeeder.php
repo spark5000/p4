@@ -7,7 +7,6 @@ class TagTaskTableSeeder extends Seeder
     public function run()
     {
 
-
         $tasks =[
             1 => ['personal'],
             2 => ['personal','family','work'],
@@ -23,17 +22,10 @@ class TagTaskTableSeeder extends Seeder
             12 => ['family','work']
         ];
 
-
         foreach($tasks as $id => $tags) {
-
-
             $task = \App\Task::where('id','like',$id)->first();
-
-
             foreach($tags as $tagName) {
                 $tag = \App\Tag::where('name','LIKE',$tagName)->first();
-
-
                 $task->tags()->save($tag);
             }
 
